@@ -118,17 +118,33 @@ let Facebook = 350
 let takehome = ((google * 6) + (aws * 4) + (Facebook *10))
 //console.log(takehome)
 
-let productoffer = 2;
-let productexpiration = true
-let premiummember = true
+let sheduleconflicts = false
+let maxClassSize = 30;
+let currentClassSize = 24;
+
+let canEnroll = !sheduleconflicts && (currentClassSize < maxClassSize);
+
+
+let minCartSize = 2;
+let cartSize = 3
+let productexpiration = false;
+let premiumMember = false;
+
+let canOfferApply = (premiumMember || (cartSize >= minCartSize) && !productexpiration;
 
 let username = 'codeup';
 let password = 'notastrongpassword';
 let minlength = (password) => password.length >=5;
 let nousernamepassword = (username, password) => !password.includes(username);
 let usernamelength = username = username.length <= 20;
-let nowhitespace = (nws) => nws.trim() === nws;
+let userLength = username.length;
+let passLength = password.length;
+let firstCharUser = username.substring(0,1);
+let lastCharUser = username.substring((userLength -1), userLength);
+let firstCharPass = username.substring(0,1);
+let lastCharPass = username.substring((passLength -1), passLength);
 
+let hasWhiteSpace = firstCharUser === ' ' || lastCharUser ' ' === || firstCharUser ' ' === || lastCharPass ' ' || firstCharPass ' '
 
 
 
