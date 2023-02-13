@@ -1,39 +1,53 @@
 "use strict";
-
-// traditional method
-// function helloWorld(){
-//     alert("Hello World!")
-// }
-
-// const helloWorld = (name) => {
-//     let message = `Hello ${name}!`
-//     return message;
+//
+// // traditional method
+// // function helloWorld(){
+// //     alert("Hello World!")
+// // }
+//
+// // const helloWorld = (name) => {
+// //     let message = `Hello ${name}!`
+// //     return message;
+// // }
+// //
+// // let firsthello = helloWorld("jason");
+// // console.log(firsthello);
+// // let secondhello = helloWorld("Javier");
+// // alert(secondhello)
+// //
+// // let message:
+// // const highFive = (name1, name2) => {
+// //     let message `${name1} gives ${name2} a high five`
+// //     return message
+// // }
+//
+// const isEven = (num) => {
+//     let result = num % 2 === 0;
+//     return result
 // }
 //
-// let firsthello = helloWorld("jason");
-// console.log(firsthello);
-// let secondhello = helloWorld("Javier");
-// alert(secondhello)
+// let students = 24;
+// let evenStudents = isEven(students)
 //
-// let message:
-// const highFive = (name1, name2) => {
-//     let message `${name1} gives ${name2} a high five`
-//     return message
+// //IIFE (Immediatly-invoked Function Expression) arrow function
+//     (() => {
+//
+//     })();
+//
+// (function() => {
+//
+// })();
+//
+// function myname(fn, ln) {
+//     fn = "Matthew";
+//     ln = " Lorber";
+//     return fn + ln
 // }
 
-const isEven = (num) => {
-    let result = num % 2 === 0;
-    return result
+//console.log("My name is " + myname())
+
+function negativeNumber (num) {
+    return num > 0 ? -num : num;
 }
 
-let students = 24;
-let evenStudents = isEven(students)
-
-//IIFE (Immediatly-invoked Function Expression) arrow function
-    (() => {
-
-    })();
-
-(function() => {
-
-})();
+console.log(negativeNumber(34))
