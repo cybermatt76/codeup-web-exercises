@@ -26,7 +26,7 @@
 //     color = color.toLowerCase();
 //
 //     if (color === 'red') {
-//         return "I love red Corvettes.";
+//         return "Strawberries are red.";
 //     } else if (color === 'blue') {
 //         return "Blue is a great color!";
 //     } else if (color === 'cyan') {
@@ -48,11 +48,11 @@
 //                  will contain a different color every time the page loads)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
-/**
- * TODO:
- * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
- * You should see a different message every time you refresh the page
- */
+// /**
+//  * TODO:
+//  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
+//  * You should see a different message every time you refresh the page
+//  */
 
 // console.log(analyzeColor(randomColor));
 
@@ -82,7 +82,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-// let color = prompt("What is your favorite color")
+// const color = prompt("What is your favorite color")
 // function analyzeColor(color) {
 //     color = color.toLowerCase();
 //     switch (color) {
@@ -137,6 +137,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //             return totalAmount
 //     }
 // }
+//
+// console.log(calculateTotal(2, 45.00))
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -145,31 +147,30 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-//Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
-let totalAmount = prompt("How much was your bill?");
-function calculateTotal (luckyNumber, totalAmount) {
-    switch (luckyNumber) {
-        case 0:
-            return totalAmount;
-        case 1:
-            return totalAmount - (totalAmount * 0.1);
-        case 2:
-            return totalAmount - (totalAmount * 0.25);
-        case 3:
-            return totalAmount - (totalAmount * 0.35);
-        case 4:
-            return totalAmount - (totalAmount * 0.5);
-        case 5:
-            return 0;
-        default:
-            return totalAmount
-    }
-}
-alert("Your lucky number is " + luckyNumber);
-alert("Your original price was " + totalAmount);
-alert("Your discounted price is " + calculateTotal(luckyNumber, totalAmount))
-
+// Generate a random number between 0 and 6
+// const luckyNumber = Math.floor(Math.random() * 6);
+// let totalAmount = parseFloat(prompt("How much was your bill?"));
+// function calculateTotal (luckyNumber, totalAmount) {
+//     switch (luckyNumber) {
+//         case 0:
+//             return totalAmount;
+//         case 1:
+//             return totalAmount - (totalAmount * 0.1);
+//         case 2:
+//             return totalAmount - (totalAmount * 0.25);
+//         case 3:
+//             return totalAmount - (totalAmount * 0.35);
+//         case 4:
+//             return totalAmount - (totalAmount * 0.5);
+//         case 5:
+//             return 0;
+//         default:
+//             return totalAmount
+//     }
+// }
+// alert("Your lucky number is " + luckyNumber);
+// alert("Your original price was " + totalAmount.toLocaleString('en-US', {style: 'currency', currency: 'USD'}));
+// alert("Your discounted price is " + calculateTotal(luckyNumber, totalAmount).toLocaleString('en-US', {style: 'currency', currency: 'USD'}))
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -188,27 +189,133 @@ alert("Your discounted price is " + calculateTotal(luckyNumber, totalAmount))
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-
-// const enterNumber = confirm("Would you like to enter a number?")
-//
-// if (enterNumber) {
-//     const number = parseFloat(prompt("Please enter a number"));
-//
-//     if (number % 2 === 0 ) {
-//         alert(`The number ${number} is even.`);
-//     } else {
-//         alert(`The number ${number} is odd.`);
-//     }
-//
-//     alert(`The number plus 100 is ${number + 100}.`);
-//
-//     if (number > 0) {
-//         alert(`The number ${number} is positive.`);
-//     } else if (number < 0) {
-//         alert(`The number${number} is negative.`);
-//     } else {
-//         alert(`The number ${number} is zero.`);
-//     }
-// } else {
-//     alert("You have chosen not to enter a number.")
+// function formatToUSD(number) {
+//     const formatter = new Intl.NumberFormat('en-US', {
+//         style: 'currency',
+//         currency: 'USD'
+//     });
+//     return formatter.format(number);
 // }
+// console.log(formatToUSD(124))
+
+
+const enterNumber = confirm("Would you like to enter a number?")
+
+if (enterNumber) {
+    const number = parseFloat(prompt("Please enter a number"));
+
+    if (number % 2 === 0 ) {
+        alert(`The number ${number} is even.`);
+    } else {
+        alert(`The number ${number} is odd.`);
+    }
+    alert(`The number plus 100 is ${number + 100}.`);
+    if (number > 0) {
+        alert(`The number ${number} is positive.`);
+    } else if (number < 0) {
+        alert(`The number${number} is negative.`);
+    } else {
+        alert(`The number ${number} is zero.`);
+    }
+} else {
+    alert("You have chosen not to enter a number.")
+}
+
+
+
+// function getToDestination(age, isInsured, hasCar, canGetRideshare) {
+//     var age = confirm("Is the rider over 16?");
+//     if (age === true) {
+//         // user clicked "ok"
+//     } else {
+//         // user clicked "cancel"
+//     }
+//     var isInsured = confirm("Does the rider have insurance?");
+//     if (isInsured === true) {
+//         // user clicked "ok"
+//     } else {
+//         //user clicked "cancel"
+//     }
+//     var hasCar = confirm("Does the rider have a car?");
+//     if (hasCar === true) {
+//         // user clicked "ok"
+//     } else {
+//         //user clicked cancel
+//     }
+//     var canGetRideshare = confirm("Can the rider get a rideshare?");
+//     if (canGetRideshare === true) {
+//         // user clicked ok
+//     } else {
+//         //user clicked cancel
+//     }
+//         if (age => 16 && isInsured && hasCar) {
+//             return "You can drive yourself.";
+//         } else if (age < 16, !isInsured || !hasCar, canGetRideshare) {
+//             return "You can get an Uber.";
+//         } else (age < 16, !isInsured, !hasCar, !canGetRideshare); {
+//             return "You need to get a ride from a friend!";
+//     }
+// }
+// ### IF / ELSE IF / ELSE
+//
+// #### Create a function called `getToDestination` which will help determine how a person can get to their destination!
+//
+//     It will accept 4 arguments and the parameter names are:
+//
+//     - age - the age of the rider
+// - isInsured - a boolean telling the function if the rider has insurance
+// - hasCar - a boolean describing if the rider has a car
+// - canGetRideshare - boolean describing if the rider can get a ride share (Uber, etc)
+//
+// ---
+//     1. If the rider is over 16, has insurance, and has a car then they can use their own vehicle
+// 2. If the rider is not over 16, has no insurance, OR has no car but they CAN get a rideshare, then they call up a rideshare service
+// 3. If the rider meets none of the above, they should call a friend for a ride!
+//
+//     This `getToDestination` should not return any value, but rather console log based on the conditions met.
+//
+// ---
+//
+// #### getToDestination, part 2
+//
+// - Create a function called canGetRideshare() which will *RETURN* a boolean
+// - It will determine if there are drivers nearby and the person has enough money for the ride
+// - Now, when you call getToDestination(), instead of passing in a canGetRideShare parameter
+// - Call canGetRideshare() in the else if *after* !isLegalDriver &&...
+// - Be sure to log to the user if they can or cannot get a rideshare
+//
+// BONUS -> This exercise will probably get the mind wondering "How can I make this more?.."
+// - Consider this: What if mileage determined:
+//     - If the rider has enough funds?
+//     - If there is a driver close enough to service the rider?
+
+    //---
+// ### SWITCH STATEMENTS
+//
+// Let's make an application which helps a user input *validated* specs on a vehicle they are trying to sell:
+// - This will involve multiple switch statements and functions
+// - Orchestrate the statements in a central function that is responsible for calling and checking for errors
+//     each switch statement should be wrapped in a function which accepts the user's input as a string parameter and return that same string if it is validated
+//     ie: `function getBodyStyle(input){return input}`
+//
+//
+//     - For user input, either use the browser's prompt/confirm/alert methods or mock up user input by hard-coding values
+//
+//
+//     - The user should be able to enter their
+//     - Body style (2D, 4D, etc)
+//     - Vehicle type (sports car, sedan, compact, truck, etc)
+//     - Vehicle color
+//
+//
+//     - Each switch statement should confirm the user's choice in a logging statement
+//
+//
+//     - The point of this is to validate what the user enters.
+//     - If they do not enter an acceptable input, the DEFAULT statement will handle this as an error
+//         ie: default: `"error: " + vehicleType + " not recognized"`;
+//         - If this occurs, call the related function again (see: recursion) until the user enters a correct choice
+//         - HINT: a way you can check for errors is to see if the string contains the word "error"
+//
+//
+//         - After all switch statement functions successfully return the user's input, concatenate them all into a nicely-formatted string and return all data to the user
