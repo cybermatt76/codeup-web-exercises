@@ -139,10 +139,10 @@ console.log(calculateTip())
 //
 // console.log(applyDiscount(97, 50))
 
-const applyDiscount = (price, discount) => {
-    let appliedDiscount = parseFloat(price) - (parseFloat(price) * parseFloat(discount));
-    return appliedDiscount;
-}
-
-let dicountMessage = applyDiscount("100", ".2");
-console.log(`After the applied discount, the price is ${dicountMessage.toLocaleString('en-US'), {style: 'currency', currency "USD"}}`)
+// const applyDiscount = (price, discount) => {
+//     let appliedDiscount = parseFloat(price) - (parseFloat(price) * parseFloat(discount));
+//     return appliedDiscount;
+// }
+//
+// let dicountMessage = applyDiscount("100", ".2");
+// console.log(`After the applied discount, the price is ${dicountMessage.toLocaleString
