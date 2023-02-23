@@ -9,9 +9,9 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-// function sayHello(name) {
-//     return "Hello, " + name + "!";
-// }
+function sayHello(name) {
+    return "Hello, " + name + "!";
+}
 
 // const sayHello = (name) => {
 //     let message =`Hello, ${name}!`;

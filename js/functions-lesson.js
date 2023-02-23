@@ -5,11 +5,12 @@
 // //     alert("Hello World!")
 // // }
 //
-// // const helloWorld = (name) => {
-// //     let message = `Hello ${name}!`
-// //     return message;
-// // }
-// //
+const helloWorld = (name) => {
+    let message = `Hello ${name}!`
+    return message;
+}
+
+console.log(helloWorld(Matthew))
 // // let firsthello = helloWorld("jason");
 // // console.log(firsthello);
 // // let secondhello = helloWorld("Javier");
