@@ -1,0 +1,18 @@
+/*p {*/
+/*    color: #900d3a;*/
+/*text-transform:Uppercase;*/
+/*}*/
+
+.paragraph-one {
+    color: #900d3a;
+text-transform:Uppercase;
+}
+
+.paragraph-two {
+    color: #0d4a90;
+    text-transform:lowercase;
+}
+.paragraph-three {
+    color: #11af1e;
+    text-transform:Uppercase;
+}
