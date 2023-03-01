@@ -84,6 +84,7 @@
     display: flex;
     flex-direction: column;
     flex: 1 0 0;
+    align-content: center;
 }
 
 /* Combo classes to extend the column's versatility */
@@ -92,6 +93,7 @@
 }
 .column.text-center {
     text-align: center;
+    align-items: center;
 }
 .column.align-center {
     align-item: center;
