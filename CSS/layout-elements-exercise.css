@@ -1,0 +1,64 @@
+header.container {
+    height: 80px;
+    border-bottom: 1px solid #000000;
+
+}
+.container.hero-scene{
+    height: 80vh;
+    background-color: #ffffff;
+}
+.container.features {
+    padding: 40px 0;
+}
+
+.features-card {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 40px;
+    transition: all ease .3s;
+}
+
+.features-card:hover {
+    transform: scale(1.05);
+}
+
+.“header-image” {
+}
+
+.header row {
+justify-content: end;
+}
+
+.button style{
+    background-color: #494b49; /* Green */
+    border: #0d4a90;
+    color: #961e1e;
+    padding: inherit;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.boxes {
+    text-align: center;
+    background-color: #c4c2c2;
+    width: 1100px;
+    height: 800px;
+    padding-top: 100px;
+
+}
+.box1 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    text-align: start;
+}
+.box2 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #494b49;
+}
+

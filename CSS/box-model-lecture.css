@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.page-wrapper.all-centered {
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 400px;
+    height: 300px;
+    background-color: #b61f1f;
+    margin: 40px;
+    padding: 40px;
+    border: 20px solid #0e0e0e;
+}
