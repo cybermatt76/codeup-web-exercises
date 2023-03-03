@@ -1,6 +1,6 @@
 header.container {
     height: 80px;
-    border-bottom: 1px solid #000000;
+    box-shadow: 10px 10px 10px #494b49;
 
 }
 .container.hero-scene{
@@ -12,7 +12,7 @@ header.container {
 }
 
 .features-card {
-    border: 1px sollid #000000;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding: 40px;
     transition: all ease .3s;

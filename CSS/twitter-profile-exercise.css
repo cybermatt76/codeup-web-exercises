@@ -1,0 +1,224 @@
+:root {
+    --twitter-blue: #1C9BEF;
+    --twitter-light-blue: #ebf5fe;
+    --twitter-black: rgb(15, 20, 25);
+    --dark-grey: rgb(83, 100, 113);
+    --light-grey: #e7eaec;
+}
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.left-sidebar, .right-sidebar {
+    flex: 0 1 250px;
+}
+
+.left-sidebar {
+    border-right: 1px solid var(--light-grey);
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+}
+
+.right-sidebar {
+    border-left: 1px solid var(--light-grey);
+}
+
+.logo-wrapper {
+    width: 55px;
+    height: 55px;
+    color: var(--twitter-blue);
+    padding: 12px;
+    transition: all ease .3s;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.logo-wrapper:hover {
+    background-color: var(--twitter-light-blue);
+}
+
+nav.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.menu-item {
+    display: flex;
+    padding: 10px 30px 10px 17px;
+    gap: 20px;
+    align-items: center;
+    color: var(--twitter-black);
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.menu-item:hover {
+    background-color: var(--light-grey);
+}
+
+.menu-item p {
+}
+
+.menu-icon-wrapper {
+    flex: 0 1 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height:1px;
+    height: 26px;
+    width: 26px;
+}
+.menu-icon-wrapper>.ellipses {
+    height: 8px;
+}
+
+.menu-icon {
+    width: 26px;
+}
+.cta-button {
+    min-height: 52px;
+    padding: 0 32px;
+    background-color: var(--twitter-blue);
+    display:flex;
+    align-items: center;
+    outline: none;
+    border-radius: 999px;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+}
+.left-sidebar .cta-button {
+    align-self: stretch;
+    max-width: 226px;
+}
+.sidebar-bottom {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 20px;
+    align-self: stretch;
+    padding-right: 5px;
+}
+
+.sidebar-bottom .menu-item {
+    gap: 10px;
+    padding-right: 15px;
+    align-self: stretch;
+}
+
+.left-avatar-wrapper {
+    height: 40px;
+    width: 40px;
+    border-radius: 999px;
+    overflow:hidden;
+}
+.left-avatar-wrapper.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.twitter-handle-wrapper {
+    line-height: 100%;
+    font-size: 15px;
+    flex: 1 0 0;
+}
+.twitter-handle-wrapper .twitter-name {
+    color: var(--twitter-black);
+    font-weight: 600;
+}
+.twitter-handle-wrapper .twitter-handle {
+    color: var(--dark-grey);
+}
+
+.main-top {
+    height: 53px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    line-height: 100%;
+    padding: 0 20px;
+}
+
+.main-top-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.main-top .twitter-name {
+    color: var(--twitter-black);
+    font-weight: 700;
+}
+
+.main-top .tweet-number {
+    font-size: 13px;
+    color: var(--dark-grey);
+}
+.twitter-banner {
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.profile-pic img {
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    width: 150px;
+}
+
+.profile-header h2{
+    display: flex;
+    font-size: 20px;
+    padding: 30px 30px 0px 5px;
+    gap: 20px;
+    align-items: center;
+    color: var(--twitter-black);
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.twitter-handle p {
+    display: flex;
+    font-size: 16px;
+    padding: 0px 5px 5px 5px;
+    align-items: center;
+    color: #797a79;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.joined-twitter {
+    padding-top: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 16px;
+    color: #797a79;
+}
+
+.calendar-icon img {
+    height: 30px;
+    width: 30px;
+    overflow:hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.following-follower {
+    padding-top: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+}
