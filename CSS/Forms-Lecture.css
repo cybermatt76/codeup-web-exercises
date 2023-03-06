@@ -1,0 +1,20 @@
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+
+}
+
+.forms-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-column {
+    display: flex;
+    margin-top: 70px;
+}
+
+.fieldset {
+    border-radius: 10px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms Lecture</title>
+  <link rel="stylesheet" href="css/resets.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/Forms-Lecture.css">
+</head>
+<body>
+<div class="page-wrapper">
+  <div class="forms-column">
+  <div class="form-container">
+    <fieldset>
+    <form action="/submit-form" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" username="username" required>
+
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" required>
+
+    <input type="submit" value="Submit">
+    </form>
+    </fieldset>
+  </div>
+  <div class="form-container">
+     <fieldset>
+      <form>
+        <p>Choose your favorite comic book universe:</p>
+        <input type="radio" id="marvel" name="comicUniverse" value="marvel">
+        <label for="marvel">Marvel Comics</label><br>
+        <input type="radio" id="dc" name="comicUniverse" value="dc">
+        <label for="dc">DC Comics</label><br>
+        <input type="submit" value="Submit">
+      </form>
+     </fieldset>
+  </div>
+  </div>
+  <div class="menu-column">
+    <fieldset>
+      <legend> Create your burger</legend>
+    <form>
+      <p>Bun type:</p>
+      <input type="radio" id="regularBun" name="bunType" value="regularBun" checked>
+      <label for="regularBun">Regular bun</label><br>
+      <input type="radio" id="sesameBun" name="bunType" value="sesameBun">
+      <label for="sesameBun">Sesame seed bun</label><br>
+      <input type="radio" id="wholeWheatBun" name="bunType" value="wholeWheatBun">
+      <label for="wholeWheatBun">Whole wheat bun</label><br>
+
+      <p>Number of hamburger patties:</p>
+      <input type="radio" id="onePatty" name="pattyCount" value="onePatty" checked>
+      <label for="onePatty">One patty</label><br>
+      <input type="radio" id="twoPatties" name="pattyCount" value="twoPatties">
+      <label for="twoPatties">Two patties</label><br>
+
+      <p>Vegetable choices:</p>
+      <input type="checkbox" id="lettuce" name="vegetable" value="lettuce">
+      <label for="lettuce">Lettuce</label><br>
+      <input type="checkbox" id="tomato" name="vegetable" value="tomato">
+      <label for="tomato">Tomato</label><br>
+      <input type="checkbox" id="onion" name="vegetable" value="onion">
+      <label for="onion">Onion</label><br>
+      <input type="checkbox" id="pickles" name="vegetable" value="pickles">
+      <label for="pickles">Pickles</label><br>
+
+      <p>Topping choices:</p>
+      <input type="checkbox" id="ketchup" name="topping" value="ketchup">
+      <label for="ketchup">Ketchup</label><br>
+      <input type="checkbox" id="mustard" name="topping" value="mustard">
+      <label for="mustard">Mustard</label><br>
+      <input type="checkbox" id="mayo" name="topping" value="mayo">
+      <label for="mayo">Mayo</label><br>
+
+      <input type="submit" value="Submit">
+    </form>
+    </fieldset>
+  </div>
+</div>
+</body>
+</html>
