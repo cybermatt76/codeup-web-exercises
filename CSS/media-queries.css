@@ -26,6 +26,7 @@ li {
 .content-row {
     padding-top: 20px;
     padding-bottom: 200px;
+    max-width: 900px;
 }
 
 .heading {
