@@ -886,3 +886,64 @@ function willLoginUser(username, password, age, isAdmin) {
         return username !== password && age >= 18;
     }
 }
+
+// Your solutions will go here :)
+
+
+function lowerCase(input) {
+    if (typeof input !== 'string') {
+        return false;
+    }
+    return input.toLowerCase();
+}
+
+function isAllLowerCase(input) {
+    if (typeof input !== 'string' || input !== input.toLowerCase()) {
+        return false;
+    } else if (input == input.toLowerCase()) {
+        return true;
+    }
+}
+
+function isAllUpperCase(input) {
+    if (typeof input !== 'string' || input !== input.toUpperCase()) {
+        return false;
+    } else if (input == input.toUpperCase()) {
+        return true;
+    }
+}
+
+function isNotPalindrome(input) {
+    if (isNumericAndNotNaN(input) || input === undefined || input === null || input === true || input === false || typeof input === "object") return true;
+    return input.toLowerCase() !== input.toLowerCase().split('').reverse().join('');
+}
+
+
+function multiplyBy2(input1) {
+    if (!isNumericOrNumericString(input1)) return false;
+    return parseFloat(input1) * 2;
+}
+
+function convertHourToSec(input1) {
+    if (!isNumericOrNumericString(input1) || input1 < 0 ) return false;
+    return input1 * 3600;
+}
+
+function getLowestNumber (val1, val2, val3){
+    if (!isNumericOrNumericString(val1) || !isNumericOrNumericString(val2) || !isNumericOrNumericString(val3)) return false;
+    return Math.min(val1, val2, val3);
+}
+
+function addStringLengths(input1, input2) {
+    if (typeof input1 !== "string" || typeof input2 !== "string") {
+        return false;
+    } else {
+        return input1.length + input2.length;
+    }
+}
+
+function subtract (input1, input2) {
+    if (!isNumericOrNumericString(input1) || !isNumericOrNumericString(input2)) return false;
+    return parseFloat(input1) - parseFloat(input2);
+}
+

@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.btn {
+    padding: 10px 40px;
+    font-size: 18px;
+    color: #e82711;
+    background-color: #11af1e;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all-ease;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+.page-wrapper.red {
+    background-color: red;
+}
