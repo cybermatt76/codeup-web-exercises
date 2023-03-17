@@ -1,0 +1,21 @@
+.header {
+    margin: 50px;
+    justify-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px;
+}
+
+.list-items {
+    margin: 50px;
+}
+
+.audio-button {
+    margin: 50px;
+}
