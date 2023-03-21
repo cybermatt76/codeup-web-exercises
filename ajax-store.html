@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Exercise</title>
+  <link rel="stylesheet" href="CSS/resets.css">
+  <link rel="stylesheet" href="CSS/layout.css">
+  <link rel="stylesheet" href="CSS/ajax-store.css">
+</head>
+<body>
+<div class="page-wrapper">
+  <div class="header">
+    <h1>Tool Time</h1>
+  </div>
+
+  <div class="row">
+    <table id="products" class="products-table">
+      <thead>
+      <tr>
+              <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+              <th>Categories</th>
+      </tr>
+      </thead>
+      <tbody id="insertProducts"></tbody>
+    </table>
+
+  </div>
+  <div class="refresh-button">
+    <button id="refreshButton">Refresh</button>
+  </div>
+</div>
+
+
+<script src="js/jquery-3.6.4.js"></script>
+<script src="js/ajax-store.js"></script>
+</body>
+</html>
