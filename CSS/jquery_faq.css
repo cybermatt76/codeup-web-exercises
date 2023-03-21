@@ -8,3 +8,25 @@ h4 {
     margin-top: 40px;
     margin-bottom: 20px;
 }
+
+.image-wrapper {
+    width: 400px;
+    height: auto;
+}
+
+.container {
+    align-content: center;
+}
+
+.picture-button {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.row {
+    align-items: center;
+}
+
+img {
+    border: 10px solid #8B4513;
+}
