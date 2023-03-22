@@ -44,7 +44,7 @@
     "hardware"
   ],
   "price": 20
-} , {
+}, {
   "title": "screws",
   "quantity": 1000,
   "categories": [
@@ -58,5 +58,12 @@
     "hardware"
   ],
   "price": 15
+} , {
+  "title": "exhaust samples",
+  "quantity": 1,
+  "categories": [
+    "hardware"
+  ],
+  "price": 7
 }
 ]

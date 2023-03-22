@@ -1,5 +1,5 @@
 .page-wrapper {
-    background-image: url("/CSS/images/keys-workshop-mechanic-tools.jpg");
+    background-image: url("/images/keys-workshop-mechanic-tools.jpg");
 
 }
 
@@ -24,6 +24,7 @@
     max-width: 800px;
     margin: auto;
     font-family: Arial, sans-serif;
+
 }
 
 .products-table th {
