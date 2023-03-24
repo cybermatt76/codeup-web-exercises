@@ -14,7 +14,7 @@ body {
 
 .weather-header {
     display: flex;
-    width: 80%;
+    width: 100%;
     height: 100px;
     margin: 10px;
     background-color: #1C9BEF;
@@ -34,6 +34,7 @@ body {
     border-radius: 10% / 50%;
     justify-content: center;
     align-items: center;
+    margin:auto;
 
 }
 
@@ -42,7 +43,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .weatherday {
@@ -92,4 +93,8 @@ body {
     font-family: Georgia, serif;
     font-size: 30px;
     color: #e7eaec;
+}
+
+#weather {
+    padding-bottom: 30px;
 }
