@@ -42,7 +42,18 @@
     center: [ -77.89077475434503,38.502928434113876], // starting position [lng, lat]
     zoom: 8, // starting zoom
   });
+  let marker = new mapboxgl.Marker({
+    draggable: true
+  })
+          .setLngLat([-74.5, 40])
+          .addTo(map);
 
+  // Get the marker's coordinates when it is moved
+  marker.on('dragend', function () {
+    var lngLat = marker.getLngLat();
+    console.log('Longitude:', lngLat.lng);
+    console.log('Latitude:', lngLat.lat);
+  });
 </script>
 <script src="js/mapbox_maps_api.js"></script>
 </body>
