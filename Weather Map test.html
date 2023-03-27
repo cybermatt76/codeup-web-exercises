@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Mapbox GL JS + OpenWeatherMap API</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    .mapboxgl-popup { max-width: 200px; }
+    .mapboxgl-popup-content { text-align: center; font-family: 'Open Sans', sans-serif; }
+    .mapboxgl-popup-close-button { display: none; }
+    .mapboxgl-ctrl-geocoder { min-width: 50%; }
+  </style>
+</head>
+<body>
+
+<div id='map'></div>
+
+<script>
+  mapboxgl.accessToken = 'YOUR_ACCESS_TOKEN';
+
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-98.4916,29.4252],
+    zoom: 9
+  });
+
+  var geocoder = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl
+  });
+
+  map.addControl(geocoder);
+
+  var marker = new mapboxgl.Marker({
+    draggable: true
+  }).setLngLat([-98.4916,29.4252])
+          .addTo(map);
+
+  marker.on('dragend', function() {
+    var lngLat = marker.getLngLat();
+
+    var url = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lngLat.lat + '&lon=' + lngLat.lng + '&appid=YOUR_API_KEY&units=imperial';
+
+    fetch(url)
+            .then(function(response) {
+              return response.json();
+            })
+            .then(function(data) {
+              var forecast = document.getElementById('forecast');
+              forecast.innerHTML = '';
+
+              for (var i = 0; i < data.list.length; i++) {
+                var forecastItem = data.list[i];
+                var date = new Date(forecastItem.dt * 1000);
+                var hours = date.getHours();
+                var ampm = hours >= 12 ? 'pm' : 'am';
+                hours = hours % 12;
+                hours = hours ? hours : 12;
+                var minutes = '0' + date.getMinutes();
+                var timeString = hours + ':' + minutes.substr(-2) + ' ' + ampm;
+                var tempString = Math.round(forecastItem.main.temp) + '&deg;';
+                var iconUrl = 'https://openweathermap.org/img/w/' + forecastItem.weather[0].icon + '.png';
+
+                forecast.innerHTML += '<div class="forecast-item">' +
+                        '<div class="forecast-time">' + timeString + '</div>' +
+                        '<div class="forecast-icon"><img src="' + iconUrl + '" /></div>' +
+                        '<div class="forecast-temp">' + tempString + '</div>' +
+                        '</div>';
+              }
+
+              // Get weather alerts
+              var alertUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lngLat.lat + '&lon=' + lngLat.lng + '&appid=YOUR_API_KEY';
+              fetch(alertUrl)
+                      .then(function(response) {
+                        return response.json();
+                      })
+                      .then(function(data) {
+                        if (data.hasOwnProperty('alerts')) {
+                          alert(data.alerts[0].description);
+                        }
+                      });

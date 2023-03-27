@@ -34,17 +34,17 @@
     <div class="weather-header">
         <h1>Matt's Weather Page</h1>
     </div>
+    <div id="weather"></div>
     <div id="map"></div>
-        <div id="weather"></div>
+
     <script>
         mapboxgl.accessToken = MAPBOX_API_TOKEN;
         let map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-96, 37.8],
-            zoom: 3
+            center: [-98.4916,29.4252],
+            zoom: 9
         });
-
     </script>
 </div>
 </body>
