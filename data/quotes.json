@@ -2,41 +2,41 @@
 
   "text": "Be the change that you wish to see in the world.",
   "author": "Mahatma Gandhi",
-  "image": "images/gandhi.jpg"
+  "image": "images/ghandi.jpeg"
 }, {
 
   "text": "The only way to do great work is to love what you do.",
   "author": "Steve Jobs",
-  "image": "images/jobs.jpg"
+  "image": "images/jobs.jpeg"
 }, {
   "text": "It does not matter how slowly you go as long as you do not stop.",
   "author": "Confucius",
-  "image": "images/confucius.jpg"
+  "image": "images/confucius.jpeg"
 }, {
   "text": "Believe you can and you're halfway there.",
   "author": "Theodore Roosevelt",
-  "image": "/images/roosevelt.jpeg"
+  "image": "images/roosevelt.jpeg"
 }, {
   "text": "I have not failed. I've just found 10,000 ways that won't work.",
   "author": "Thomas Edison",
-  "image": "/images/edison.jpg"
+  "image": "images/edison.jpeg"
 } , {
   "text": "Great men do not seek power; they have power thrust upon them.",
    "author": "Kahless",
-  "image": "/imgages/kahless.webp"
+  "image": "images/kahless.webp"
 } ,
   {
     "text": "Destroying an empire to win a war is no victory. And ending a battle to save an empire is no defeat.",
     "author": "Kahless",
-    "image": "/imgages/kahless.webp"
+    "image": "images/kahless.webp"
   } , {
   "text": "Today is a good day to die.",
   "author": "Kahless",
-  "image": "/imgages/kahless.webp"
+  "image": "images/kahless.webp"
 } , {
   "text": "It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat.",
   "author": "Theodore Roosevelt",
-  "image": "images/roosevelt.jpeg"
+  "image": "/images/roosevelt.jpeg"
 } , {
   "text": "Do what you can, with what you have, where you are.",
   "author": "Theodore Roosevelt",

@@ -15,9 +15,19 @@ function generateQuote() {
     const quoteImage = quote.image;
 
     const quoteHtml = `
-    <img src="${quoteImage}" alt="${quoteAuthor}">
-    <p>${quoteText}</p>
-    <cite>${quoteAuthor}</cite>
+    <div class="row">
+        <div class="image-wrapper">
+            <img src="${quoteImage}" alt="${quoteAuthor}">
+        </div>
+        <div class="column">
+            <div class="the-quote">
+                <p>${quoteText}</p>
+            </div>
+            <div class = "cite-wrapper">
+                <cite>${quoteAuthor}</cite>
+            </div>
+        </div>
+    </div>
   `;
 
     document.getElementById('quote').innerHTML = quoteHtml;
