@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Movie Project</title>
   <script src="js/movie-app.js"></script>
+  <script src="js/keys.js"></script>
   <link rel="stylesheet" href="CSS/resets.css">
   <link rel="stylesheet" href="CSS/layout.css">
   <link rel="stylesheet" href="CSS/movie-app.css">
@@ -31,36 +32,45 @@
       </h1>
     </div>
   </div>
-    <div class ="movie-card-row">
-      <div class="movie-card">
-      <img src="/images/A-new-hope.jpg" alt="Movie Poster">
-      <h2 class="movie-title">Movie Title</h2>
-      <p class="movie-year">Year</p>
-      <p class="movie-genre">Genre</p>
-      <div class="button row">
-        <button class="add-btn">Add</button>
-        <label for="rating">Movie Rating:</label>
-        <select id="rating" name="rating">
-          <option value="1">1 star</option>
-          <option value="2">2 stars</option>
-          <option value="3">3 stars</option>
-          <option value="4">4 stars</option>
-          <option value="5">5 stars</option>
-        </select>
-      </div>
-  </div>
-      <div class="movie-card">
-    <img src="/images/A-new-hope.jpg" alt="Movie Poster">
-    <h2 class="movie-title">Movie Title</h2>
-    <p class="movie-year">Year</p>
-    <p class="movie-genre">Genre</p>
-    <div class="button row">
-      <button class="delete-btn">Delete</button>
-      <button class="edit-btn">Edit</button>
-      </select>
+  <div class="navbar">
+    <div class="navbar-header">
+      <button class="navbar-toggle" id="navbar-toggle">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">My App</a>
+    </div>
+    <div class="navbar-search">
+      <input type="text" id="search-bar" placeholder="Search Movie Database">
+      <button type="button" id="search-btn">Search</button>
+      <input type="text" class="search-favorites" placeholder="Search for favorites...">
+      <button type="button" id="favorite-search-btn">Search</button>
+
+    </div>
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Comedy</a></li>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Sci-Fi</a></li>
+        <li><a href="#">Anime</a></li>
+        <li><a href="#">Fantasy</a></li>
+      </ul>
+    </div>
+    <div class="navbar-genres">
+      <button class="navbar-library-btn">Movie Library</button>
+      <button class="navbar-genres-btn">Drama</button>
+      <button class="navbar-genres-btn">Comedy</button>
+      <button class="navbar-genres-btn">Action</button>
+      <button class="navbar-genres-btn">Sci-Fi</button>
+      <button class="navbar-genres-btn">Anime</button>
+      <button class="navbar-genres-btn">Fantasy</button>
     </div>
   </div>
+  <div class ="movie-card-row">
+    <div class="movie-container"></div>
+    <div id="result-container"></div>
     </div>
 </div>
+<script type="module" src="js/matthew-isaac-movie-project.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-import {setFavorite, patchFavorite} from './movies.js'
+import * as movieUtils from './movies.js'
 
 (async()=>{
 
@@ -6,20 +6,29 @@ import {setFavorite, patchFavorite} from './movies.js'
         const title = document.querySelector('#title').value;
         const genre = document.querySelector('#genre').value;
         const rating = parseFloat(document.querySelector('#rating').value);
+        const image_location = document.querySelector('#image').value;
         let movieData = {
             title,
             genre,
-            rating
+            rating,
+            image_location
+
         }
-        let result = await setFavorite(movieData);
+        let result = await movieUtils.setFavorite(movieData);
         console.log(result);
     });
 
-    let body = {
-        "rating": 2
-    }
-    let response = await patchFavorite(3, body);
-    // let data = await response.json();
-    // console.log(data);
+    // let body = {
+    //     "rating": 3
+    // }
+    // let response = await patchFavorite(4, body);
+    // await deleteFavorite(4);
+
+    let favorites = await movieUtils.getFavorites();
+    console.log('All favorites => ', favorites);
+    let favorite = await movieUtils.getFavorite(2);
+    console.log('ONE favorite => ', favorite);
+    let searched = await movieUtils.searchFavorite({genre: 'Comedy'});
+    console.log('Searched favorite => ', searched);
 
 })();

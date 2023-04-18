@@ -19,7 +19,7 @@ function generateQuote() {
         <div class="image-wrapper">
             <img src="${quoteImage}" alt="${quoteAuthor}">
         </div>
-        <div class="column">
+        <div class="quote-card">
             <div class="the-quote">
                 <p>${quoteText}</p>
             </div>

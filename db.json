@@ -1,19 +1,166 @@
 {
-  "posts": [
+  "favorites": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "The Shawshank Redemption",
+      "genre": "Drama",
+      "rating": 5,
+      "image": "/images/movie-posters/shawshank-redemption.jpg"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "The Godfather",
+      "genre": "Crime",
+      "rating": 5,
+      "image": "/images/movie-posters/godfather.jpg"
+    },
+    {
+      "title": "Shrek",
+      "genre": "Comedy",
+      "rating": 2,
+      "id": 3,
+      "image": "/images/movie-posters/shrek.jpg"
+    },
+    {
+      "title": "Empire Strikes Back",
+      "genre": "Fantasy",
+      "rating": 5,
+      "id": 4,
+      "image": "/images/movie-posters/empire-strikes-back.jpg"
+    },
+    {
+      "title": "Return of the Jedi",
+      "genre": "Fantasy",
+      "rating": 5,
+      "id": 5,
+      "image": "/images/movie-posters/return-of-the-jedi.jpg"
+    },
+    {
+      "title": "A New Hope",
+      "genre": "Fantasy",
+      "rating": 5,
+      "id": 5,
+      "image": "/images/movie-posters/A-new-hope.jpg"
+    },
+    {
+      "title": "It",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
+      "genreNames": [
+        "Horror",
+        "Fantasy"
+      ],
+      "rating": "1",
+      "id": 6
+    },
+    {
+      "title": "Flash Gordon",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/5PyiSSJ6lVsY8IbmPHBo1sp596h.jpg",
+      "genreNames": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy",
+        "Action",
+        "Comedy"
+      ],
+      "rating": "1",
+      "id": 7
+    },
+    {
+      "title": "Robin Hood: Prince of Thieves",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/hbRnWUNJkKKVN5mkcuC5ooqjE4e.jpg",
+      "genreNames": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Romance"
+      ],
+      "rating": "1",
+      "id": 8
+    },
+    {
+      "title": "Spaceballs",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/o624HTt93iIJIc1Sg5hNkDTnk5l.jpg",
+      "genreNames": [
+        "Comedy",
+        "Science Fiction"
+      ],
+      "rating": "5",
+      "id": 9
+    },
+    {
+      "title": "John Wick",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nCzzQKGijVzfGFg42id7uDLOjY5.jpg",
+      "genreNames": [
+        "Action",
+        "Thriller"
+      ],
+      "rating": "5",
+      "id": 10
+    },
+    {
+      "title": "Tommy Boy",
+      "genre": [
+        "Comedy"
+      ],
+      "rating": "1",
+      "image": "https://image.tmdb.org/t/p/w500/cUvdzCbhLyYUAwbIkBjT3tC28cK.jpg",
+      "id": 11
+    },
+    {
+      "title": "Black Sheep",
+      "genre": [
+        "Horror",
+        "Comedy"
+      ],
+      "rating": "4",
+      "image": "https://image.tmdb.org/t/p/w500/b6Spp82Tg8rv4YUSHGWFqFbgp0q.jpg",
+      "id": 12
+    },
+    {
+      "title": "The Last Starfighter",
+      "genre": [
+        "Adventure",
+        "Science Fiction",
+        "Action"
+      ],
+      "rating": "5",
+      "image": "https://image.tmdb.org/t/p/w500/an1H0DPADLDlEsiUy8vE9AWqrhm.jpg",
+      "id": 13
+    },
+    {
+      "title": "Star Wars: The Last Jedi",
+      "genre": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "rating": "1",
+      "image": "https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+      "id": 14
+    },
+    {
+      "title": "The Super Mario Bros. Movie",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Family",
+        "Fantasy",
+        "Comedy"
+      ],
+      "rating": "1",
+      "image": "https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+      "id": 15
+    },
+    {
+      "title": "Glory",
+      "genre": [
+        "Drama",
+        "History",
+        "War"
+      ],
+      "rating": "5",
+      "image": "https://image.tmdb.org/t/p/w500/tubPIJJah9iJ9eDHXxaxjLdOcQd.jpg",
+      "id": 16
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
